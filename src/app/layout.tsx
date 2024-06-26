@@ -1,4 +1,6 @@
-import '../globals.css';
+// src/app/layout.tsx
+
+import './globals.css'; 
 import Home from './home/Home';
 
 const Layout = () => {
