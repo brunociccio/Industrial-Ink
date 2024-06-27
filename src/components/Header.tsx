@@ -6,60 +6,50 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   background-color: #000; 
   color: white;
+  padding: 1em 0 3em 0;
   width: 100%; 
-  position: fixed; 
+  position: absolute; 
   top: 0;
   left: 0;
   z-index: 1000;
-`;
-
-const MenuIcon = styled.img`
-  height: 40px; 
-  cursor: pointer;
-  margin-right: 1em; /* Espaçamento entre o menu e o logo */
+  height: 40px; /* Altura fixa do header */
 `;
 
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 0.2em;
+  gap: 0.5em;
 `;
 
 const Industrial = styled.span`
   font-family: 'Syncopate', sans-serif;
   font-size: 1.5em;
-  color: #CD7F32; /* Bronze escuro */
+  color: #ffffff; 
+  margin-left: 1em; 
 `;
 
 const Ink = styled.span`
   font-family: 'Syncopate', sans-serif;
   font-size: 1.5em;
-  color: #DAA520; /* Bronze claro */
+  color: #ffffff; 
 `;
 
-const LoginContainer = styled.div`
-  margin-left: auto;
-  margin-right: 2em; /* Espaçamento entre o logo e o login */
-`;
-
-const LoginIcon = styled.img`
+const MenuIcon = styled.img`
   height: 40px; 
+  cursor: pointer;
+  margin-right: 1em; 
 `;
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <MenuIcon src="/menu-hamburger.png" alt="Menu" />
       <LogoContainer>
         <Industrial>INDUSTRIAL</Industrial>
         <Ink>INK</Ink>
       </LogoContainer>
-      <LoginContainer>
-        <LoginIcon src="/login.png" alt="Login" />
-      </LoginContainer>
+      <MenuIcon src="/menu-hamburger.png" alt="Menu" />
     </HeaderContainer>
   );
 };
