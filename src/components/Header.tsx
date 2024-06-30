@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
@@ -99,9 +100,9 @@ const Header = () => {
         </LogoContainer>
         <MenuIcon src="/menu-hamburger.png" alt="Menu" onClick={toggleMenu} />
         <DropdownMenu open={menuOpen}>
-          <NavLink href="#portfolios">PORTFÓLIOS</NavLink>
-          <NavLink href="#orcamentos">ORÇAMENTOS</NavLink>
-          <NavLink href="#outros">OUTROS</NavLink>
+          <NavLink href="/portfolios">PORTFÓLIOS</NavLink>
+          <NavLink href="/orcamentos">ORÇAMENTOS</NavLink>
+          <NavLink href="/outros">OUTROS</NavLink>
         </DropdownMenu>
       </TopRow>
       <LinkRow>
