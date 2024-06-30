@@ -9,7 +9,7 @@ const HeaderContainer = styled.header`
   align-items: center;
   background-color: #000; 
   color: white;
-  padding: 1em 0 3em 0;
+  padding: 1em;
   width: 100%; 
   position: absolute; 
   top: 0;
