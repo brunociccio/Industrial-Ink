@@ -1,6 +1,15 @@
 "use client";
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const blink = keyframes`
+  0%, 100% {
+    color: #ffffff;
+  }
+  50% {
+    color: #DAA520;
+  }
+`;
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -9,7 +18,7 @@ const HeaderContainer = styled.header`
   align-items: center;
   background-color: #000; 
   color: white;
-  padding: 1em;
+  padding: 0.8em;
   width: 100%; 
   position: absolute; 
   top: 0;
@@ -35,7 +44,7 @@ const Industrial = styled.span`
   font-family: 'Syncopate', sans-serif;
   font-size: 1.7em;
   color: #ffffff; 
-  margin-left: 1em;
+  margin-left: 0.7em;
 `;
 
 const Ink = styled.span`
@@ -58,12 +67,12 @@ const LinkRow = styled.div`
 `;
 
 const NavLink = styled.a`
-  font-family: 'Syncopate', sans-serif;
-  font-size: 0.8em;
-  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9em;
   text-decoration: none;
   padding: 0.5em 1em;
   cursor: pointer;
+  animation: ${blink} 2s infinite;
 
   &:hover {
     color: #DAA520;
@@ -82,7 +91,6 @@ const DropdownMenu = styled.div<{ open: boolean }>`
   align-items: flex-start;
   left: 0.8em; 
 `;
-
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -115,6 +123,7 @@ const Header = () => {
 };
 
 export default Header;
+
 
 
 
