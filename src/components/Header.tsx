@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 
-const blink = keyframes`
-  0%, 100% {
-    color: #ffffff;
+const fadeInOut = keyframes`
+  0%, 20%, 80%, 100% {
+    opacity: 1;
   }
   50% {
-    color: #DAA520;
+    opacity: 0;
   }
 `;
 
@@ -63,16 +63,19 @@ const LinkRow = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 0.5em;
 `;
 
 const NavLink = styled.a`
-  font-family: 'Orbitron', sans-serif;
-  font-size: 0.9em;
+  font-family: 'Neon', sans-serif;
+  color: #FFD700; /* Cor amarela para o texto */
+  text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 40px #FFD700, 0 0 80px #FFD700, 0 0 90px #FFD700, 0 0 100px #FFD700, 0 0 150px #FFD700;
   text-decoration: none;
   padding: 0.5em 1em;
   cursor: pointer;
-  animation: ${blink} 2s infinite;
+  color: #DAA520;
+  animation: ${fadeInOut} 4s infinite;
+  
 
   &:hover {
     color: #DAA520;
@@ -123,6 +126,8 @@ const Header = () => {
 };
 
 export default Header;
+
+
 
 
 
