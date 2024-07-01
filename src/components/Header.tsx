@@ -32,6 +32,7 @@ const TopRow = styled.div`
   align-items: center;
   width: 100%;
   height: 40px;
+  padding: 1em 0 0 0;
 `;
 
 const LogoContainer = styled.div`
@@ -63,19 +64,27 @@ const LinkRow = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin-top: 0.5em;
+  margin-top: 1em;
+  position: relative;
 `;
 
 const NavLink = styled.a`
   font-family: 'Neon', sans-serif;
-  color: #FFD700; /* Cor amarela para o texto */
-  text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 40px #FFD700, 0 0 80px #FFD700, 0 0 90px #FFD700, 0 0 100px #FFD700, 0 0 150px #FFD700;
+  color: #FFEA70; 
+  text-shadow: 0 0 5px #FFEA70, 0 0 10px #FFEA70, 0 0 20px #FFEA70, 0 0 40px #FFEA70, 0 0 80px #FFEA70, 0 0 90px #FFEA70, 0 0 100px #FFEA70, 0 0 150px #FFEA70;
   text-decoration: none;
   padding: 0.5em 1em;
   cursor: pointer;
-  color: #DAA520;
   animation: ${fadeInOut} 4s infinite;
-  
+`;
+
+const DropdownNavLink = styled.a`
+  font-family: 'Syncopate', sans-serif;
+  color: #ffffff; /* Cor branca para o texto */
+  text-decoration: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  background-color: #000; /* Fundo preto */
 
   &:hover {
     color: #DAA520;
@@ -84,15 +93,16 @@ const NavLink = styled.a`
 
 const DropdownMenu = styled.div<{ open: boolean }>`
   position: absolute;
-  top: 60px;
+  top: 65px;
   right: 0.8em;
+  left: 0.8em;
   background-color: #000;
-  border: 1px solid #DAA520;
+  border: 1.5px solid #FFEA70;
   padding: 1em;
   display: ${({ open }) => (open ? 'flex' : 'none')};
   flex-direction: column;
   align-items: flex-start;
-  left: 0.8em; 
+  z-index: 1001; 
 `;
 
 const Header = () => {
@@ -111,9 +121,9 @@ const Header = () => {
         </LogoContainer>
         <MenuIcon src="/menu-hamburger.png" alt="Menu" onClick={toggleMenu} />
         <DropdownMenu open={menuOpen}>
-          <NavLink href="/portfolios">PORTFÓLIOS</NavLink>
-          <NavLink href="/orcamentos">ORÇAMENTOS</NavLink>
-          <NavLink href="/outros">OUTROS</NavLink>
+          <DropdownNavLink href="/portfolios">PORTFÓLIOS</DropdownNavLink>
+          <DropdownNavLink href="/orcamentos">ORÇAMENTOS</DropdownNavLink>
+          <DropdownNavLink href="/outros">OUTROS</DropdownNavLink>
         </DropdownMenu>
       </TopRow>
       <LinkRow>

@@ -7,7 +7,7 @@ const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  top: 0;
+  top: 2em;
   left: 0;
   z-index: -1;
 `;
@@ -20,7 +20,7 @@ const Image = styled.img`
 
 const ButtonContainer = styled.div`
   position: absolute;
-  bottom: 2em;
+  bottom: 4em;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -41,7 +41,7 @@ const Button = styled.a`
   text-align: center;
 
   &:hover {
-    background-color: #DAA520;
+    background-color: #FFEA70;
     color: #000;
     font-weight: bold;
   }
