@@ -93,7 +93,7 @@ const DropdownNavLink = styled.a`
 
 const DropdownMenu = styled.div<{ open: boolean }>`
   position: absolute;
-  top: 65px;
+  top: 80px;
   right: 0.8em;
   left: 0.8em;
   background-color: #000;
