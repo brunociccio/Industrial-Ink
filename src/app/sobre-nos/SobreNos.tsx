@@ -2,14 +2,14 @@
 import React from 'react';
 import Header from '../../components/Header';
 
-const Orcamentos = () => {
+const SobreNos = () => {
     return (
         <div>
         <Header />
-        <h1>Orçamentos</h1>
-        <p>Conteúdo da página de orçamentos.</p>
+        <h1>Sobre Nós</h1>
+        <p>Conteúdo da página de portfólios.</p>
         </div>
     );
 };
 
-export default Orcamentos;
+export default SobreNos;

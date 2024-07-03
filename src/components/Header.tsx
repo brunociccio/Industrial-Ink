@@ -134,8 +134,9 @@ const Header = () => {
         <DropdownMenu open={menuOpen}>
           <DropdownNavLink href="/">HOME</DropdownNavLink>
           <DropdownNavLink href="/portfolios">PORTFÓLIOS</DropdownNavLink>
+          <DropdownNavLink href="/contato">CONTATO</DropdownNavLink>
           <DropdownNavLink href="/orcamentos">ORÇAMENTOS</DropdownNavLink>
-          <DropdownNavLink href="/outros">OUTROS</DropdownNavLink>
+          <DropdownNavLink href="/sobre-nos">SOBRE NÓS</DropdownNavLink>
         </DropdownMenu>
       </TopRow>
       <LinkRow>
