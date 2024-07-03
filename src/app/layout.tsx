@@ -1,13 +1,13 @@
-// src/app/layout.tsx
+"use client";
+import React from 'react';
+import Header from '../components/Header';
 
-import './globals.css'; 
-import Home from './home/Home';
-
-const Layout = () => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <>
-      <Home />
-    </>
+    <div>
+      <Header />
+      {children}
+    </div>
   );
 };
 

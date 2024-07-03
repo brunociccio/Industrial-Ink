@@ -43,22 +43,22 @@ const LogoContainer = styled.div`
 
 const Industrial = styled.span`
   font-family: 'Syncopate', sans-serif;
-  font-size: 1.7em;
+  font-size: 1.8em;
   color: #ffffff;
   margin-left: 0.7em;
 
   &::first-letter {
-    color: #FFD700;
+    color: #ffffff;
   }
 `;
 
 const Ink = styled.span`
   font-family: 'Syncopate', sans-serif;
-  font-size: 1.7em;
+  font-size: 1.8em;
   color: #ffffff;
 
   &::first-letter {
-    color: #FFD700;
+    color: #ffffff;
   }
 `;
 
@@ -132,6 +132,7 @@ const Header = () => {
         </LogoContainer>
         <MenuIcon src="/menu-hamburger.png" alt="Menu" onClick={toggleMenu} />
         <DropdownMenu open={menuOpen}>
+          <DropdownNavLink href="/">HOME</DropdownNavLink>
           <DropdownNavLink href="/portfolios">PORTFÓLIOS</DropdownNavLink>
           <DropdownNavLink href="/orcamentos">ORÇAMENTOS</DropdownNavLink>
           <DropdownNavLink href="/outros">OUTROS</DropdownNavLink>
