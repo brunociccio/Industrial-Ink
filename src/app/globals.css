@@ -1,6 +1,13 @@
 /* src/app/globals.css */
 @import url('https://fonts.googleapis.com/css2?family=Neon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Syncopate:wght@400&family=Homemade+Apple&family=Orbitron:wght@400&family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 
 :root {
   --max-width: 1100px;

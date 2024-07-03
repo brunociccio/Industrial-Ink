@@ -18,7 +18,7 @@ const HeaderContainer = styled.header`
   align-items: center;
   background-color: #000; 
   color: white;
-  padding: 0.8em;
+  padding: 0.7em;
   width: 100%; 
   position: absolute; 
   top: 0;
@@ -32,7 +32,7 @@ const TopRow = styled.div`
   align-items: center;
   width: 100%;
   height: 40px;
-  padding: 1em 0 0 0;
+  padding: 0.5em 0 0 0;
 `;
 
 const LogoContainer = styled.div`
@@ -44,15 +44,24 @@ const LogoContainer = styled.div`
 const Industrial = styled.span`
   font-family: 'Syncopate', sans-serif;
   font-size: 1.7em;
-  color: #ffffff; 
+  color: #ffffff;
   margin-left: 0.7em;
+
+  &::first-letter {
+    color: #FFD700;
+  }
 `;
 
 const Ink = styled.span`
   font-family: 'Syncopate', sans-serif;
   font-size: 1.7em;
-  color: #ffffff; 
+  color: #ffffff;
+
+  &::first-letter {
+    color: #FFD700;
+  }
 `;
+
 
 const MenuIcon = styled.img`
   height: 40px; 
@@ -70,22 +79,24 @@ const LinkRow = styled.div`
 
 const NavLink = styled.a`
   font-family: 'Neon', sans-serif;
-  color: #FFEA70; 
-  text-shadow: 0 0 5px #FFEA70, 0 0 10px #FFEA70, 0 0 20px #FFEA70, 0 0 40px #FFEA70, 0 0 80px #FFEA70, 0 0 90px #FFEA70, 0 0 100px #FFEA70, 0 0 150px #FFEA70;
+  font-size: 20px;
+  color: #FFD700; 
+  text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 40px #FFD700, 0 0 80px #FFD700, 0 0 90px #FFD700, 0 0 100px #FFD700, 0 0 150px #FFD700;
   text-decoration: none;
-  padding: 0.5em 1em;
+  padding: 0.3em 0.5em;
   cursor: pointer;
-  animation: ${fadeInOut} 4s infinite;
 `;
 
+
+//animation: ${fadeInOut} 4s infinite;
 const DropdownNavLink = styled.a`
   font-family: 'Syncopate', sans-serif;
-  color: #ffffff; /* Cor branca para o texto */
+  color: #ffffff; 
   text-decoration: none;
   padding: 0.5em 1em;
   cursor: pointer;
-  background-color: #000; /* Fundo preto */
-
+  background-color: #333333; 
+  font-weight: 500;
   &:hover {
     color: #DAA520;
   }
@@ -96,7 +107,7 @@ const DropdownMenu = styled.div<{ open: boolean }>`
   top: 80px;
   right: 0.8em;
   left: 0.8em;
-  background-color: #000;
+  background-color: #333333; 
   border: 1.5px solid #FFEA70;
   padding: 1em;
   display: ${({ open }) => (open ? 'flex' : 'none')};
