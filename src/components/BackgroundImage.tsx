@@ -50,7 +50,7 @@ const Image = styled.img`
 const WhatsAppButtonContainer = styled.div`
   position: absolute;
   bottom: 12em;
-  right: 1.1em;
+  right: 2em;
   z-index: 1;
 `;
 
