@@ -35,7 +35,7 @@ const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  top: 2em;
+  top: 5em;
   left: 0;
   z-index: -1;
 `;
@@ -44,11 +44,12 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 53% center; 
 `;
 
 const WhatsAppButtonContainer = styled.div`
   position: absolute;
-  bottom: 10em;
+  bottom: 12em;
   right: 1.1em;
   z-index: 1;
 `;
@@ -65,7 +66,7 @@ const WhatsAppButton = styled.a`
 
 const ButtonContainer = styled.div`
   position: absolute;
-  bottom: 5em;
+  bottom: 7em;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -94,8 +95,8 @@ const Button = styled.a`
 
 const NeonTextContainer = styled.div`
   position: absolute;
-  top: 18%;
-  right: 1.2em;
+  top: 16%;
+  right: 1em;
   transform: translateY(-50%);
   text-align: right;
   z-index: 1;
@@ -114,7 +115,7 @@ const NeonText = styled.div<{ delay: number }>`
 const BackgroundImage = () => {
   return (
     <ImageContainer>
-      <Image src="/background-home.jpg" alt="Background" />
+      <Image src="/background-home-2.jpg" alt="Background" />
       <WhatsAppButtonContainer>
         <WhatsAppButton href="https://api.whatsapp.com/send?phone=5511993671709&text=Informa%C3%A7%C3%B5es%20necess%C3%A1rias:%20artista%20de%20prefer%C3%AAncia%20(nome),%20local%20do%20corpo,%20tamanho%20em%20cent%C3%ADmetros,%20pb%20ou%20colorido.%20Imagens,%20refer%C3%AAncias%20ou%20uma%20breve%20explica%C3%A7%C3%A3o%20da%20ideia." target="_blank" />
       </WhatsAppButtonContainer>

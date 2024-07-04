@@ -46,22 +46,13 @@ const Industrial = styled.span`
   font-size: 1.8em;
   color: #ffffff;
   margin-left: 0.7em;
-
-  &::first-letter {
-    color: #ffffff;
-  }
 `;
 
 const Ink = styled.span`
   font-family: 'Syncopate', sans-serif;
   font-size: 1.8em;
   color: #ffffff;
-
-  &::first-letter {
-    color: #ffffff;
-  }
 `;
-
 
 const MenuIcon = styled.img`
   height: 40px; 
@@ -87,26 +78,28 @@ const NavLink = styled.a`
   cursor: pointer;
 `;
 
-
-//animation: ${fadeInOut} 4s infinite;
 const DropdownNavLink = styled.a`
   font-family: 'Syncopate', sans-serif;
   color: #ffffff; 
   text-decoration: none;
-  padding: 0.5em 1em;
+  padding:1em;
   cursor: pointer;
   background-color: #333333; 
   font-weight: 500;
+  width: 85%; 
+
   &:hover {
-    color: #DAA520;
+    background: linear-gradient(to right, #FFEA70, #FFEA70 60%, transparent);
+    color: #000;
+    font-weight: bold;
   }
 `;
 
 const DropdownMenu = styled.div<{ open: boolean }>`
   position: absolute;
-  top: 80px;
-  right: 0.8em;
-  left: 0.8em;
+  top: 70px;
+  right: 1em;
+  left: 8em;
   background-color: #333333; 
   border: 1.5px solid #FFEA70;
   padding: 1em;
@@ -133,10 +126,10 @@ const Header = () => {
         <MenuIcon src="/menu-hamburger.png" alt="Menu" onClick={toggleMenu} />
         <DropdownMenu open={menuOpen}>
           <DropdownNavLink href="/">HOME</DropdownNavLink>
+          <DropdownNavLink href="/sobre-nos">SOBRE NÓS</DropdownNavLink>
           <DropdownNavLink href="/portfolios">PORTFÓLIOS</DropdownNavLink>
           <DropdownNavLink href="/contato">CONTATO</DropdownNavLink>
           <DropdownNavLink href="/orcamentos">ORÇAMENTOS</DropdownNavLink>
-          <DropdownNavLink href="/sobre-nos">SOBRE NÓS</DropdownNavLink>
         </DropdownMenu>
       </TopRow>
       <LinkRow>
@@ -149,8 +142,6 @@ const Header = () => {
 };
 
 export default Header;
-
-
 
 
 
