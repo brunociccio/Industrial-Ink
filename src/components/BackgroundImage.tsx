@@ -106,7 +106,7 @@ const NeonText = styled.div<{ delay: number }>`
   font-family: 'Courier Prime', monospace;
   color: #FFEA70; 
   text-shadow: 0 0 5px #FFEA70, 0 0 20px #FFEA70, 0 0 30px #FFD700;
-  font-size: 1.5em;
+  font-size: 1.6em;
   margin: 0.3em 0;
   opacity: 0;
   animation: ${({ delay }) => fadeInOut(delay)} 5s linear infinite;
@@ -115,7 +115,7 @@ const NeonText = styled.div<{ delay: number }>`
 const BackgroundImage = () => {
   return (
     <ImageContainer>
-      <Image src="/background-home-2.jpg" alt="Background" />
+      <Image src="/background-home-3.jpg" alt="Background" />
       <WhatsAppButtonContainer>
         <WhatsAppButton href="https://api.whatsapp.com/send?phone=5511993671709&text=Informa%C3%A7%C3%B5es%20necess%C3%A1rias:%20artista%20de%20prefer%C3%AAncia%20(nome),%20local%20do%20corpo,%20tamanho%20em%20cent%C3%ADmetros,%20pb%20ou%20colorido.%20Imagens,%20refer%C3%AAncias%20ou%20uma%20breve%20explica%C3%A7%C3%A3o%20da%20ideia." target="_blank" />
       </WhatsAppButtonContainer>
